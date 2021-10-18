@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Help my woof</string>
+
+    <string name="iniciarsesionpantalla">Iniciar Sesión</string>
+    <string name="registropantalla">Registrar </string>
+    <string name="btn_iniciarsesion">Iniciar Sesion </string>
+
+
+    <string name="btn_registrarsesesion">Registrarse </string>
+
+</resources>
