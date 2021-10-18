@@ -1,14 +1,21 @@
 package com.ruddymiranda.helpmywoof;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.ActionCodeSettings;
+import com.google.firebase.auth.FirebaseAuth;
 
 
 public class AuthActivity extends AppCompatActivity {
+
 
 
 
@@ -22,8 +29,6 @@ public class AuthActivity extends AppCompatActivity {
     public void iriniciar(View view){
         Intent i = new Intent(this, IniciarSesionActivity.class);
         startActivity(i);
-
-
     }
 
     public void registrar(View view){
@@ -31,4 +36,5 @@ public class AuthActivity extends AppCompatActivity {
         startActivity(i);
 
     }
+
 }

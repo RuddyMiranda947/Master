@@ -59,12 +59,17 @@ public class RegistrarseActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
+                                FirebaseUser user1 = FirebaseAuth.getInstance().getCurrentUser();
+                                user1.sendEmailVerification();
+
+
 
                                 Toast.makeText(getApplicationContext(), "Usuario creado.",
                                         Toast.LENGTH_SHORT).show();
                                 // Sign in success, update UI with the signed-in user's information
                                 //Log.d(TAG, "createUserWithEmail:success");
                                 FirebaseUser user = mAuth.getCurrentUser();
+
                                 Intent i = new Intent(getApplicationContext(),AuthActivity.class);
                                 startActivity(i);
 
